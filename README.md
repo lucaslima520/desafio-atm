@@ -11,8 +11,14 @@ Foi desenvolvido utilizando as lingugane typescript, python, html juntamente com
   
 EXECUÇÃO E TESTES DO PROJETO 
 
-  O projeto foi desenvolvido utilizando typescript(front-end) para a interação com a interface e python(back-end) para manipulção dos dados, e para alteração no código de typescript é necessário executar o comando 'tsc atm-root/script.ts' para que o mesmo possa ser compilado em javascript e o navegador possa reconhecer e interpretar o mesmo. Na chamada da do endpoint no código de javascript foi passado a url completa 'http://localhost:5000/api/saque' porque ao utilizar o liverserver, o mesmo utiliza de um host diferente e acaba gerando o erro 405 (method allowed) diferentemte do postman que já executava a resquest normalmente. Deste forma inserindo a url de requisição no código o browser consegue intrpretar sem nenhuma divergência. 
+  O projeto foi desenvolvido utilizando typescript(front-end) para a interação com a interface e python(back-end) para manipulção dos dados, e para alteração no código de typescript é necessário executar o comando 'tsc atm-root/script.ts' para que o mesmo possa ser compilado em javascript e o navegador possa reconhecer e interpretar o mesmo como na imagem abaixo: 
   
+  ![image](https://github.com/lucaslima520/desafio-atm/assets/70073731/1210267a-4a21-43d8-9d92-86648b2a5a55) - IMAGEM
+  
+  Na chamada da do endpoint no código de javascript foi passado a url completa 'http://localhost:5000/api/saque' ao invés de '/api/saque', isso porque ao utilizar o liverserver, o mesmo utiliza de um host diferente e acaba gerando o erro 405 (method allowed) diferentemte do postman que já executava a resquest normalmente. Deste forma inserindo a url de requisição no código o browser consegue intrpretar sem nenhuma divergência. 
+
+  ![image](https://github.com/lucaslima520/desafio-atm/assets/70073731/fd720bc3-a709-4573-8a8d-e22a3c905293) - IMAGEM
+
   .EXTENSÃO LIVESERVER
   Faça o download nas extensões disponíveis do Visual Studio
   .POSTMAN
@@ -22,16 +28,18 @@ PRIMEIRA FORMA DE EXECUÇÃO DO PROJETO - LIVESERVER
   1. Após a instalação do flask será necessário executar o seguinte comando para inicialializarmos o servidor através do terminal do Visual Studio: 'python atm-root/app.py' (caso esteja nas mesmas pastas deste repositório, caso contrário incremente as demias no comando).
   2. Abro o arquivo index ou execute o liverserver a partir do Visual Studio.
   3. Digite o valor de interesse na aba texto disponível e em seguida em calcular, conforme a imagem abaixo:
+  4. 
      ![image](https://github.com/lucaslima520/desafio-atm/assets/70073731/18ebae66-184c-4f72-beb7-ea6a0be163f3) - IMAGEM DE TESTE
      
 OS RESULTADOS ESTÃO SITUDADOS NO ALERTA APÓS O CLIKC NO BOTÃO 'CALCULAR', TAMBÉM NO CONSOLE DO PRÓPIRO BROWSER ATRAVÉS DA TECLA 'F12' NA ABA 'CONSOLE'.
 
 SEGUNDA FORMA DE EXECUÇÃO DO PROJETO
-  1.Csao queira somente realizar a requisição da API basta abrir o postman, selecionar o método POST, inserir a seguinte URL: 'http://localhost:5000/api/saque', em headers: Key 'Content-type' Value 'application/json', já no corpo da requisição escolha o formato JSON e insira seguinte código com valor desejado conforme a imagem abaixo: 
+  1.Caso queira somente realizar a requisição da API basta abrir o postman, selecionar o método POST, inserir a seguinte URL: 'http://localhost:5000/api/saque', em headers: Key 'Content-type' Value 'application/json', já no corpo da requisição escolha o formato JSON e insira seguinte código com valor desejado conforme a imagem abaixo: 
 {
     "valor": 100,
 }
 Clique em 'send' para envio da resição!
+
 ![image](https://github.com/lucaslima520/desafio-atm/assets/70073731/e7dcdfba-b9b2-4624-ad74-2fac40af7529) - IMAGEM DE TESTE
 
 
