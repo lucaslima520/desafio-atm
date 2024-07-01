@@ -28,10 +28,10 @@ PRIMEIRA FORMA DE EXECUÇÃO DO PROJETO - LIVESERVER
   1. Após a instalação do flask será necessário executar o seguinte comando para inicialializarmos o servidor através do terminal do Visual Studio: 'python atm-root/app.py' (caso esteja nas mesmas pastas deste repositório, caso contrário incremente as demias no comando).
   2. Abro o arquivo index ou execute o liverserver a partir do Visual Studio.
   3. Digite o valor de interesse na aba texto disponível e em seguida em calcular, conforme a imagem abaixo:
-  4. 
+     
      ![image](https://github.com/lucaslima520/desafio-atm/assets/70073731/18ebae66-184c-4f72-beb7-ea6a0be163f3) - IMAGEM DE TESTE
      
-OS RESULTADOS ESTÃO SITUDADOS NO ALERTA APÓS O CLIKC NO BOTÃO 'CALCULAR', TAMBÉM NO CONSOLE DO PRÓPIRO BROWSER ATRAVÉS DA TECLA 'F12' NA ABA 'CONSOLE'.
+OS RESULTADOS ESTÃO SITUDADOS NO ALERTA APÓS CLICAR NO BOTÃO 'CALCULAR', TAMBÉM NO CONSOLE DO PRÓPIRO BROWSER ATRAVÉS DA TECLA 'F12' NA ABA 'CONSOLE'.
 
 SEGUNDA FORMA DE EXECUÇÃO DO PROJETO
   1.Caso queira somente realizar a requisição da API basta abrir o postman, selecionar o método POST, inserir a seguinte URL: 'http://localhost:5000/api/saque', em headers: Key 'Content-type' Value 'application/json', já no corpo da requisição escolha o formato JSON e insira seguinte código com valor desejado conforme a imagem abaixo: 
